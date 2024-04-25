@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример скрипта</title>
+</head>
+<body>
+    <script>
+        function openWin() {
+          myWin = window.open("https://github.com/MsHannaVL");
+        }
+        function closeIt() {
+          myWin.close();
+          }
+      </script>
+    </head>
+    <body>
+      <br>
+      <form style="text-align: center;">
+        <input type="button" value="Открываем новое окно" 
+        onclick="openWin()">
+      </form>
+      <br>
+      <form style="text-align: center;">
+        <input type="button" value="Сейчас мы закроем это окно!"
+        onclick="closeIt()">
+      </form>
+    </body>
+    </html>

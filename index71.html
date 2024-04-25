@@ -1,0 +1,18 @@
+<!DOCTYPE HTML> 
+ <html> 
+  <head> <title>Пример скрипта</title> 
+    <script type="text/javascript">
+        function newColor(color) {
+          alert(`Вы выбрали ${color}`);
+          document.bgColor = color;
+        }   
+      </script>
+    </head>
+    <body>
+      <p>Выберите цвет фона:</p>
+      <form>
+        <input type="button" value="серый" onclick="newColor('gray')">
+        <input type="button" value="светло-серый" onclick="newColor('lightgray')">
+      </form>
+    </body>
+    </html>

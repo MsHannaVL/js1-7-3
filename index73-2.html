@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Самостоятельная работа</title>
+  <script>
+    function open1() {
+      let openWindow = window.open("", "newWindow", "width=500,height=300,status=no,toolbar=yes,menubar=yes,location=yes");
+      openWindow.document.open();
+      openWindow.document.write("<!DOCTYPE html><html><head><title>Новое окно</title></head>");
+      openWindow.document.write('<body style="background-color: aqua; text-align: center; font-size: larger;">');
+      openWindow.document.write('<p style="font-weight: bold;">Наше новое окно</p>');
+      openWindow.document.write('<p><a href="https://github.com/" target="_blank" style="text-decoration: none;">');
+      openWindow.document.write("Ссылка на github.com</a></p>");
+      openWindow.document.write('<p><a href="https://github.com/MsHannaVL" target="_blank" style="text-decoration: none;">');
+      openWindow.document.write('<hr style="width: 60%;">');
+      openWindow.document.write('<p style="font-size: smaller; font-style: italic;">');
+      openWindow.document.write('<a href="" style="text-decoration: none; color: black;"onclick = "self.close()">');
+      openWindow.document.write("Эта ссылка закроет окно</a></p>");
+      openWindow.document.write("</body></html>");
+      openWindow.document.close();     
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input type="button" value="Запуск страницы в новом окне" onclick="open1()">
+  </form>
+</body>
+</html>
